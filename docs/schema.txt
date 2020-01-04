@@ -1,0 +1,49 @@
+games:
+{
+	_id: "1",
+	language: "es",
+	host: "un_1",
+	players: [
+		"un_1"
+	],
+	inLobby: false,
+	playing: false,
+	winner: "un_1",
+	startTime: (Date),
+	endTime: (Date),
+
+	startPage: "start_title",
+	endPage: "end_title",
+	graph: {
+		nodes: [
+			{
+				page: "start_title"
+			},
+			{
+				page: "page_1",
+				discoveredBy: "un_1"
+				discoveredAt: (Date),
+				otherVisits: [
+					{
+						visitedBy: "un_2",
+						visitedAt: (Date)
+					}
+				]
+			}
+		],
+		links: [
+			{
+				source: "start_title",
+				target: "page_1",
+				createdBy: "un_1",
+				createdAt: (Date)
+				otherTravels: [
+					{
+						traveledBy: "un_2",
+						traveledAt: (Date)
+					}
+				]
+			}
+		]
+	}
+}
